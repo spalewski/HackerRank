@@ -60,22 +60,22 @@ import java.util.Scanner;
 
 public class Day8 {
 
-    public static void main(String[] argh) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        HashMap hashMap = new HashMap();
-        for (int i = 0; i < n; i++) {
-            String name = in.next();
-            int phone = in.nextInt();
-            hashMap.put(name, phone);
-        }
-        while (in.hasNext()) {
-            String searched = in.next();
-            if (hashMap.containsKey(searched)) {
-                System.out.println(searched + "=" + hashMap.get(searched));
-            } else {
-                System.out.println("Not found");
-            }
-        }
+  public static void main(String[] argh) {
+    Scanner in = new Scanner(System.in);
+    int n = in.nextInt();
+    HashMap hashMap = new HashMap();
+    for (int i = 0; i < n; i++) {
+      String name = in.next();
+      int phone = in.nextInt();
+      hashMap.put(name, phone);
     }
+    while (in.hasNext()) {
+      String searched = in.next();
+      if (hashMap.containsKey(searched)) {
+        System.out.println(searched + "=" + hashMap.get(searched));
+      } else {
+        System.out.println("Not found");
+      }
+    }
+  }
 }

@@ -3,7 +3,7 @@ package com.company.daysOfCode;
 import java.util.Scanner;
 
 public class Day20 {
-  
+
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     int n = in.nextInt();

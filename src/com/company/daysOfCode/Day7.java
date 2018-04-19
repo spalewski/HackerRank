@@ -33,20 +33,20 @@ import java.util.Scanner;
 
 public class Day7 {
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = in.nextInt();
-        }
-        in.close();
-
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = n - 1; i >= 0; i--) {
-            stringBuilder.append(arr[i]);
-            stringBuilder.append(" ");
-        }
-        System.out.println(stringBuilder);
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    int n = in.nextInt();
+    int[] arr = new int[n];
+    for (int i = 0; i < n; i++) {
+      arr[i] = in.nextInt();
     }
+    in.close();
+
+    StringBuilder stringBuilder = new StringBuilder();
+    for (int i = n - 1; i >= 0; i--) {
+      stringBuilder.append(arr[i]);
+      stringBuilder.append(" ");
+    }
+    System.out.println(stringBuilder);
+  }
 }
